@@ -19,7 +19,7 @@ def info(message):
 @bot.message_handler(content_types=['text'])
 def get_weather(message):
     city = message.text.strip().lower()
-    url = 'url of your API'
+    url = 'url of your API key and the name of the city which you gonna choice during process'
     response = requests.get(url)
     data = response.json()
     if response.status_code == 200:
